@@ -84,8 +84,6 @@ func saveWallet() error {
 }
 
 func fundAccount(address string) error {
-	// pair is the pair that was generated from previous example, or create a pair based on
-	// existing keys.
 	resp, err := http.Get("https://friendbot.stellar.org/?addr=" + address)
 	if err != nil {
 		return err
